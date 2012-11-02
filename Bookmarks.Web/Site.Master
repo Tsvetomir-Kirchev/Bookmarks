@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Bookmarks.Web.Site" %>
+
+<%@ Register Src="~/Controls/ErrorSuccessNotifier/ErrorSuccessNotifier.ascx" TagPrefix="notifier" TagName="ErrorSuccessNotifier" %>
+
+
+<!DOCTYPE html>
+<html>
+    <head runat="server">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <form id="formMaster" runat="server">
+                <header id="header">
+                    <h1><asp:ContentPlaceHolder ID="ContentPlaceHolderTitle" runat="server" /></h1>
+                </header>
+                <section id="content" class="clear">
+                    <notifier:ErrorSuccessNotifier runat="server" ID="ErrorSuccessNotifier" />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server" />        
+                </section>
+                <footer id="footer">
+                    &copy; 2012 by Telerik Software Academy, No Rights Reserved
+                </footer>
+            </form>
+        </div>
+    </body>
+</html>

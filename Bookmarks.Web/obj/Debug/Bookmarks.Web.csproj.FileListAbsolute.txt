@@ -1,0 +1,7 @@
+c:\users\tsvet_000\documents\visual studio 2012\Projects\Windows 8\Bookmarks\Bookmarks.Web\bin\Bookmarks.Web.dll
+c:\users\tsvet_000\documents\visual studio 2012\Projects\Windows 8\Bookmarks\Bookmarks.Web\bin\Bookmarks.Web.pdb
+c:\users\tsvet_000\documents\visual studio 2012\Projects\Windows 8\Bookmarks\Bookmarks.Web\obj\Debug\Bookmarks.Web.csprojResolveAssemblyReference.cache
+c:\users\tsvet_000\documents\visual studio 2012\Projects\Windows 8\Bookmarks\Bookmarks.Web\obj\Debug\Bookmarks.Web.dll
+c:\users\tsvet_000\documents\visual studio 2012\Projects\Windows 8\Bookmarks\Bookmarks.Web\obj\Debug\Bookmarks.Web.pdb
+C:\Users\tsvet_000\Documents\Visual Studio 2012\Projects\Windows 8\Bookmarks\Bookmarks.Web\bin\Bookmarks.DB.dll
+C:\Users\tsvet_000\Documents\Visual Studio 2012\Projects\Windows 8\Bookmarks\Bookmarks.Web\bin\Bookmarks.DB.pdb

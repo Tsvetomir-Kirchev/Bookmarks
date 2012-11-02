@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookmarks.Web", "Bookmarks.Web\Bookmarks.Web.csproj", "{339BC7EE-59D3-46C4-BF8E-F932FF90DE70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookmarks.DB", "Bookmarks.DB\Bookmarks.DB.csproj", "{320D4690-7D2C-439F-8FE3-2FC8225D62DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{320D4690-7D2C-439F-8FE3-2FC8225D62DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320D4690-7D2C-439F-8FE3-2FC8225D62DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320D4690-7D2C-439F-8FE3-2FC8225D62DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320D4690-7D2C-439F-8FE3-2FC8225D62DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339BC7EE-59D3-46C4-BF8E-F932FF90DE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339BC7EE-59D3-46C4-BF8E-F932FF90DE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339BC7EE-59D3-46C4-BF8E-F932FF90DE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339BC7EE-59D3-46C4-BF8E-F932FF90DE70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

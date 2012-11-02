@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookmarksModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BookmarksEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="aspnet_Users" EntityType="BookmarksModel.aspnet_Users" />
+    <EntitySet Name="Bookmarks" EntityType="BookmarksModel.Bookmark" />
+    <AssociationSet Name="FK_Bookmarks_aspnet_Users" Association="BookmarksModel.FK_Bookmarks_aspnet_Users">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="Bookmarks" EntitySet="Bookmarks" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Bookmarks" Relationship="BookmarksModel.FK_Bookmarks_aspnet_Users" FromRole="aspnet_Users" ToRole="Bookmarks" />
+  </EntityType>
+  <EntityType Name="Bookmark">
+    <Key>
+      <PropertyRef Name="BookmarkID" />
+    </Key>
+    <Property Name="BookmarkID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="URL" Type="String" Nullable="false" MaxLength="1024" Unicode="false" FixedLength="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="aspnet_Users" Relationship="BookmarksModel.FK_Bookmarks_aspnet_Users" FromRole="Bookmarks" ToRole="aspnet_Users" />
+  </EntityType>
+  <Association Name="FK_Bookmarks_aspnet_Users">
+    <End Role="aspnet_Users" Type="BookmarksModel.aspnet_Users" Multiplicity="1" />
+    <End Role="Bookmarks" Type="BookmarksModel.Bookmark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Bookmarks">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
